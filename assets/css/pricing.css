@@ -1,0 +1,223 @@
+html, * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header-wrapper {
+    background: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 50px;
+}
+
+.header-wrapper .logo {
+    padding-left: 50px;
+}
+
+.header-wrapper ul li {
+    display: inline;
+    list-style: none;
+    margin: 0px 9px;
+}
+   
+.header-wrapper a {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+   
+   .header-wrapper button a {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #FEFEFE;
+   }
+   
+   .header-wrapper button {
+    background: #FF4400;
+    outline: none;
+    transition: 0.5s;
+    border: none;
+    padding: 10px 10px;
+   }
+   
+.header-wrapper button:hover {
+    background: rgb(236, 128, 89);
+}
+
+/* the main content */
+
+.banner-image {
+    background-image: url(/assets/images/Rectangle\ 26.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+
+.banner-image h1 {
+    color: #FFFFFF;
+    padding: 120px 0 0 120px;
+    font-size: 3.4em;
+    width: 60%;
+}
+
+.main-content {
+    padding-bottom: 50px;
+}
+
+.main-content h1 {
+    margin: 120px 0 40px 0;
+    text-align: center;
+    color: #FF4400;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.box-1, .box-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px auto 50px auto;
+    line-height: 1.1em;
+}
+
+.box-1 h2, .box-2 h2 {
+    font-weight: lighter;
+    padding: 45px 0 15px 0;
+}
+
+.box-1 p, .box-2 p {
+    font-size: 0.8em;
+    width: 85%;
+}
+
+.box-1 a, .box-2 a {
+    color: #FF4400;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.offer {
+    display: flex;
+    width: 31%;
+    box-shadow: 0px 2px 2px 3px #ccc;
+}
+
+.price {
+    padding-left: 20px;
+    opacity: 0.8;
+}
+
+.price .naira {
+    font-size: 1.6em;
+    font-weight: bold;
+    padding: 20px 0 40px 0;
+}
+
+
+
+
+
+
+
+   /* footer */
+   
+   .footer-wrapper {
+    background: #262F56;
+    align-items: center;
+    padding: 70px 0;
+   }
+   
+   .footer-wrapper h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+   }
+   
+   .footer-wrapper p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+   }
+   
+   .footer-wrapper .news-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+   }
+   
+   .footer-wrapper .link-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+   }
+   
+   .footer-wrapper .copy {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    width: 30%;
+    margin: auto;
+    margin-top: 40px;
+   }
+   
+   .footer-wrapper .mail button {
+    background: #FF4400;
+    outline: none;
+    transition: 0.5s;
+    border: none;
+    padding:7px 30px;
+   }
+   
+   .mail a {
+    color: white;
+    text-decoration: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+   }
+   .news-wrapper input{
+    width: 306.64px;
+   height: 42px;
+   outline: none;
+   background: transparent;
+   border: 1px solid #FFFFFF;
+   box-sizing: border-box;
+   }
+   
+   .footer-wrapper .mail button:hover {
+    background: rgb(236, 128, 89);
+   }
+   
