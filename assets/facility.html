@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./scss/style.css">
     <link rel="stylesheet" href="./css/Poppins-Black.ttf">
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+    <script defer src="./bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./bootstrap/dist/js/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script defer src="./js/app.js"></script>
     <title>Fitness and Gym - Facilities</title>
@@ -13,23 +16,42 @@
 
 <body>
     <header>
-        <nav class="mynavbar">
-            <div class="logo">
+        <nav class="navbar navbar-expand-md navbar-dark py-3 px-lg-5 fixed-top header" id="myHeader navbarText">
+            <!-- Brand -->
+            <a class="navbar-brand pl-lg-5" id="header-logo" href="#">
                 <img src="./images/covid-black.PNG" alt="covid fitness logo">
-            </div>
-            <div class="menu" id="myLinks">
-                <a href="" class="menu-btn">home</a>
-                <a href="" class="menu-btn">appointment</a>
-                <a href="" class="menu-btn">gallery</a>
-                <a href="" class="menu-btn">pricing</a>
-                <a href="" class="menu-btn">our team</a>
-                <a href="" class="menu-btn">about us</a>
-            </div>
-            <div class="booking">
-                <a href="" class="book-now-btn">book now</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
+            </a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler gold-text" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon gold-text" id="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-end text-center pr-lg-5" id="collapsibleNavbar">
+                <ul class="navbar-nav text-capitalize">
+                    <li class="nav-item">
+                        <a class="nav-link text-white px-4" href="#">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="#">appointment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="#">gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="#">pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="#">our team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="#">about us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-white book-now-btn px-4" href="#">book now</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -51,45 +73,45 @@
                     <div class="grid-box">
                         <div class="text-box text-small-screen">
                             <h3>public gym</h3>
-                            <p>Our State-of-the-art gym facility is open all day
+                            <p class="text-justify">Our State-of-the-art gym facility is open all day
                                 of the week to ensure you stay fit and healthy. We
                                 have everything you need to keep you going.</p>
-                            <p>This facility provides you with world-class equipment
+                            <p class="text-justify">This facility provides you with world-class equipment
                                 to keep you sharp in a secured and conducive environment
                                 to exercise and work-out.</p>
                             <a href="">explore</a>
                         </div>
                         <div class="img-box img-small-screen">
-                            <img src="./images/gym-room-1.png" alt="">
+                            <img src="./images/gym-room-1.png" alt="" class="img-fluid">
                         </div>
                     </div>
                     <div class="grid-box">
                         <div class="text-box" style="order: 2">
                             <h3>private gym</h3>
-                            <p>Our Private gym is a members-only gym for card carrying members, 
+                            <p class="text-justify">Our Private gym is a members-only gym for card carrying members, 
                                 equipped with modern facilities and experts to provide exceptional 
                                 services.</p>
-                            <p>Built with health,fitness, comfort and luxury in mind. It boast 
+                            <p class="text-justify">Built with health,fitness, comfort and luxury in mind. It boast 
                                 of every equipment you need to stay fit and healthy all the time.</p>
                             <a href="">explore</a>
                         </div>
                         <div class="img-box" style="order: 1">
-                            <img src="./images/gym-room-2.png" alt="">
+                            <img src="./images/gym-room-2.png" alt="" class="img-fluid">
                         </div>
                     </div>
                     <div class="grid-box">
                         <div class="text-box text-small-screen">
                             <h3>premium wellness & fitness</h3>
-                            <p>Our State-of-the-art gym facility is open all day
+                            <p class="text-justify">Our State-of-the-art gym facility is open all day
                                 of the week to ensure you stay fit and healthy. We
                                 have everything you need to keep you going.</p>
-                            <p>This facility provides you with world-class equipment
+                            <p class="text-justify">This facility provides you with world-class equipment
                                 to keep you sharp in a secured and conducive environment
                                 to exercise and work-out.</p>
                             <a href="">explore</a>
                         </div>
                         <div class="img-box img-small-screen">
-                            <img src="./images/gym-room-3.png" alt="">
+                            <img src="./images/gym-room-3.png" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -120,8 +142,8 @@
     </main>
 
     <footer>
-        <div class="footer-wrapper">
-            <div class="subscribe">
+        <div class="footer-wrapper pt-sm-3 pt-md-5">
+            <div class="subscribe mt-5">
                 <div class="subscribe-box">
                     <h3>news and offers</h3>
                     <form action="" method="POST">

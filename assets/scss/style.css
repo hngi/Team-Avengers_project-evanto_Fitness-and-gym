@@ -11,79 +11,21 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-header {
-  background-color: #333333;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 15px 0;
+nav {
+  background-color: #333333 !important;
 }
 
-header .mynavbar {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-grid-columns: 2fr 4fr 1fr;
-      grid-template-columns: 2fr 4fr 1fr;
-  gap: 0 5px;
-  width: 85%;
-  margin: 0 auto;
-}
-
-header .mynavbar .logo img {
-  width: 150px;
-  height: 50px;
-}
-
-header .mynavbar .menu {
-  padding-top: 10px;
-  display: block;
-}
-
-header .mynavbar .menu .menu-btn:first-child {
-  padding-left: 0;
-  font-weight: bold;
-}
-
-header .mynavbar .menu .menu-btn {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
-  color: #FEFEFE;
-  padding: 0 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-header .mynavbar .menu .menu-btn:last-child {
-  padding-right: 0;
-}
-
-header .mynavbar .booking {
-  padding-top: 10px;
-}
-
-header .mynavbar .booking a.icon {
-  display: none;
-}
-
-header .mynavbar .booking .book-now-btn {
+nav .book-now-btn {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 27px;
   text-align: center;
-  color: #FEFEFE;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: #FF4400;
-  padding: 12px 15px;
+  color: #FEFEFE !important;
+  text-decoration: none !important;
+  background: #FF4400 !important;
+  padding: 12px 15px !important;
+  display: inline-block;
 }
 
 main section.main-content {
@@ -96,7 +38,7 @@ main section.main-content {
 }
 
 main section.main-content div.text-content {
-  text-align: left;
+  text-align: justify;
   padding-left: 100px;
   padding-top: 150px;
 }
@@ -231,7 +173,7 @@ main section.facilities section.facilities-content .facilities-container .grid-b
   text-align: center;
   color: #333333;
   padding-bottom: 20px;
-  min-width: 371px;
+  min-width: 360px;
 }
 
 main section.facilities section.facilities-content .facilities-container .grid-box .text-box > a {
@@ -249,7 +191,7 @@ main section.facilities section.facilities-content .facilities-container .grid-b
 }
 
 main section.facilities section.facilities-content .facilities-container .grid-box .img-box img {
-  width: 807px;
+  max-width: 800px;
   height: 450px;
 }
 
@@ -259,7 +201,7 @@ main section.contact {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 300px;
+  min-height: 300px;
   margin-bottom: 30px;
 }
 
@@ -353,7 +295,7 @@ main section.contact .contact-details div > p {
 footer {
   background-color: #262F56;
   width: 100%;
-  height: 500px;
+  min-height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -536,22 +478,6 @@ footer div.footer-wrapper > p.text-5 {
 }
 
 @media only screen and (max-width: 426px) {
-  header .mynavbar {
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-grid-columns: 2fr 4fr 1fr;
-        grid-template-columns: 2fr 4fr 1fr;
-    gap: 0 5px;
-    width: 85%;
-    margin: 0 auto;
-  }
-  header .mynavbar .logo img {
-    width: 80px;
-    height: 30px;
-  }
   main section.main-content {
     height: 400px;
   }
@@ -613,11 +539,11 @@ footer div.footer-wrapper > p.text-5 {
             order: 1;
   }
   main section.facilities section.facilities-content .facilities-container .grid-box .img-box img {
-    width: 300px;
+    max-width: 280px;
     height: 200px;
   }
   main section.contact {
-    height: 350px;
+    min-height: 350px;
   }
   main section.contact > p {
     font-size: 18px;
@@ -640,7 +566,7 @@ footer div.footer-wrapper > p.text-5 {
     font-size: 10px;
   }
   footer {
-    height: 675px;
+    min-height: 675px;
   }
   footer div.footer-wrapper .subscribe {
     -ms-grid-columns: auto;
@@ -707,22 +633,6 @@ footer div.footer-wrapper > p.text-5 {
 }
 
 @media only screen and (max-width: 768px) and (min-width: 426px) {
-  header .mynavbar {
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-grid-columns: 2fr 4fr 1fr;
-        grid-template-columns: 2fr 4fr 1fr;
-    gap: 0 5px;
-    width: 85%;
-    margin: 0 auto;
-  }
-  header .mynavbar .logo img {
-    width: 80px;
-    height: 30px;
-  }
   main section.main-content {
     height: 400px;
   }
@@ -853,7 +763,7 @@ footer div.footer-wrapper > p.text-5 {
   main section.facilities section.facilities-content .facilities-container .grid-box .text-box > p {
     font-size: 10px;
     line-height: 15px;
-    width: 400px;
+    max-width: 400px;
   }
   main section.facilities section.facilities-content .facilities-container .grid-box .text-box > a {
     font-size: 10px;
@@ -871,8 +781,8 @@ footer div.footer-wrapper > p.text-5 {
             order: 1;
   }
   main section.facilities section.facilities-content .facilities-container .grid-box .img-box img {
-    width: 650px;
-    height: 300px;
+    width: 700px;
+    max-height: 300px;
   }
   main section.contact > p {
     font-size: 22px;
@@ -897,42 +807,6 @@ footer div.footer-wrapper > p.text-5 {
   }
   footer div.footer-wrapper .subscribe div.subscribe-box button {
     width: 80%;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  header .mynavbar {
-    position: relative;
-    overflow: hidden;
-  }
-  header .mynavbar .logo {
-    display: block;
-  }
-  header .mynavbar .menu {
-    display: none;
-  }
-  header .mynavbar .menu .menu-btn:first-child {
-    padding-left: 20px;
-    font-weight: bold;
-  }
-  header .mynavbar .menu .menu-btn {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-    text-align: justify;
-  }
-  header .mynavbar .booking .book-now-btn {
-    display: none;
-  }
-  header .mynavbar .booking a.icon {
-    font-size: 30px;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: #FEFEFE;
   }
 }
 /*# sourceMappingURL=style.css.map */
