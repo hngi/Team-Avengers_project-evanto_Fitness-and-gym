@@ -1,12 +1,11 @@
-body {
+body{
     font-family: 'Poppins', sans-serif;
 }
 
-header {
+header{
     /* height: 100vh; */
     margin-bottom: 100px;
 }
-
 /* navbar */
 .nav-menu {
     /* background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)); */
@@ -29,23 +28,23 @@ header {
     color: #FF4400;
 }
 
-.btn-color {
+.btn-color{
     color: white;
     /* border: 1px solid #FF3465; */
     border-radius: 0;
     transition: all .3s;
-    background: #FF4400 !important;
-    width:120px;
+    background: #FF4400;
+    width: 120px;
 }
 
-.btn-color:hover {
+.btn-color:hover{
     background-color: transparent;
     color: white;
     border: 1px solid #FF4400;
     /* font-size: 17px; */
 }
 
-.btn-color-2 {
+.btn-color-2{
     color: white;
     /* border: 1px solid #FF3465; */
     border-radius: 0;
@@ -54,7 +53,7 @@ header {
     /* width: 100px; */
 }
 
-.btn-color-2:hover {
+.btn-color-2:hover{
     /* background-color: transparent; */
     /* color: white; */
     /* border: 1px solid #FF4400; */
@@ -62,9 +61,7 @@ header {
     transform: translateY(-1px);
 }
 
-.line1,
-.line2,
-.line3 {
+.line1, .line2, .line3 {
     width: 23px;
     height: 3px;
     margin: 5px;
@@ -74,7 +71,7 @@ header {
 
 .change .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
-}
+}  
 
 .change .line2 {
     opacity: 0;
@@ -84,146 +81,81 @@ header {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
+/* end of navbar */
 
-.header-img {
-    background-image: url("../images/Rectangle\ 4.png");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    background-attachment: fixed;
-    color: white;
-    text-align: center;
-    left: 50%;
-    top: 50%;
+/* form */
+.form-field{
+    border-radius: 0;
+    border: 1px solid grey;
 }
 
-.header-img h1 {
-    padding-top: 200px;
-}
-
-.header-img h1,
-h4 {
-    margin-bottom: 40px;
-}
-
-.contact {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.inTouch {
-    background-image: url("../images/Rectangle\ 21.png");
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-    background-attachment: fixed;
-    color: white;
-    text-align: center;
-    padding-top: 30px;
-}
-
-.inTouch .vl {
-    border-left: 1px solid white;
-    height: 150px;
-}
-
-.header-wrapper {
-    background: #333333;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 3px 50px;
-}
-
-.header-wrapper .img {
-    height: 50px;
-}
-
-.header-wrapper ul li {
-    display: inline;
-    list-style: none;
-    margin: 0px 9px;
-}
-
-.header-wrapper a {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 21px;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-}
-
-.header-wrapper button a {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 27px;
-    text-align: center;
-    color: #FEFEFE;
-}
-
-.header-wrapper button {
-    height: 40px;
-    background: #FF4400;
-    outline: none;
-    transition: 0.5s;
+.form-field:focus{
+    box-shadow: none;
     border: none;
+    border-bottom: 1px solid #FF4400;
 }
 
-.header-wrapper button:hover {
-    background: rgb(236, 128, 89);
+#timepicker:before {
+    content:'Time:';
 }
+/* end of form */
+
 .address-input{
     border-radius: 0;
     border: 1px solid #FF4400;
     background: transparent;
     /* border-bottom: 1px solid #FF4400; */
 }
-.address-input:focus {
+
+.address-input:focus{
     box-shadow: none;
     /* background: transparent; */
     border: 1px solid #FF4400;
 }
-
-.sub-button {
+.sub-button{
     background: #FF4400;
     border-radius: 0;
     color: white;
     /* border: 1px solid #FF4400; */
 }
 
-.sub-button:hover {
+.sub-button:hover{
     background: white;
     color: #FF4400;
 }
 
+
+.pad{
+    /* padding-left: 70px; */
+}
+
+
+
+
+
+
+
 @media only screen and (max-width: 600px) {
-    .nav-menu {
+    .nav-menu{
         padding-left: 50px;
         padding-right: 50px;
         padding-top: 5px;
         padding-bottom: 5px;
     }
 
-    .btn-color {
+    .btn-color{
         margin-bottom: 20px;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .pad {
+    .pad{
         /* padding-left: 0px; */
     }
 }
 
 @media only screen and (max-width: 300px) {
-    .nav-menu {
+    .nav-menu{
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 5px;
