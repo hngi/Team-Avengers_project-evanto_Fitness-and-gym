@@ -4,7 +4,7 @@ body {
 
 header {
     /* height: 100vh; */
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 
 /* navbar */
@@ -86,24 +86,24 @@ header {
 
 
 .header-img {
-    background-image: url("../images/Rectangle\ 4.png");
+    background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .5)), url("../images/Rectangle\ 4.png");
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 400px;
     background-attachment: fixed;
     color: white;
     text-align: center;
+    /* vertical-align: center; */
     left: 50%;
     top: 50%;
 }
 
-.header-img h1 {
-    padding-top: 200px;
+.ptop{
+    padding-top: 60px;
 }
 
-.header-img h1,
-h4 {
-    margin-bottom: 40px;
+.mbottom{
+    margin-bottom: 50px;
 }
 
 .contact {
@@ -112,10 +112,10 @@ h4 {
 }
 
 .inTouch {
-    background-image: url("../images/Rectangle\ 21.png");
+    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .7)), url("../images/Rectangle\ 21.png");
     background-size: cover;
     background-position: center;
-    height: 50vh;
+    height: ;
     background-attachment: fixed;
     color: white;
     text-align: center;
