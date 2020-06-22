@@ -16,6 +16,9 @@ header{
     padding-right: 100px;
     transition: all .7s;
 }
+.menu-item:active {
+    color: #FF4400;
+}
 
 .menu-item {
     font-size: 13px;

@@ -158,7 +158,9 @@ body {
     font-weight: bold;
     padding: 10px 0 30px 0;
 }
-
+.menu-item:active {
+    color: #FF4400;
+}
 
 .address-input{
     border-radius: 0;
